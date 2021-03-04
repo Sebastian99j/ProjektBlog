@@ -114,8 +114,9 @@
     <input class="xbutton" type="button" value="Dodaj post" onClick="location.href='${pageContext.request.contextPath}/addPost';"/>
     <c:forEach var="posts" items="${requestScope.posts}">
         <section  class="posty">
-            <p>Nick: ${posts.nick_name} ID:${posts.id}</p>
-            <p>Wpis:</p>
+            <h4>Nick: ${posts.nick_name} ID:${posts.id}</h4>
+            <h4>Temat: ${posts.title}</h4>
+            <h4>Wpis:</h4>
             <p><c:out value="${posts.inscriptions}"/></p>
             <c:if test="${pageContext.request.remoteUser == \"admin\" }">
                 <form action="deletePost" method="get">
@@ -130,7 +131,16 @@
                     <input type="submit" value="Dodaj komentarz">
                 </form>
             </c:if>
-            <div id="komentarz"><p>Komentarze:</p></div>
+            <div id="komentarz" style="background-color: cornflowerblue;">
+                <h4>Komentarze:</h4>
+
+            <c:forEach var="comments" items="${requestScope.comments}">
+                <section>
+                    <p>Nazwa użytkownika: <c:out value="${comments.nick_name}"/></p>
+                    <p>Komentarz: <c:out value="${comments.comments}"/></p>
+                </section>
+            </c:forEach>
+            </div>
         </section>
         <p></p>
     </c:forEach>

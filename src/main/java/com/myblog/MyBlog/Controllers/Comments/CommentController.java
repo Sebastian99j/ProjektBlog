@@ -1,4 +1,4 @@
-package com.myblog.MyBlog.Controllers;
+package com.myblog.MyBlog.Controllers.Comments;
 
 import com.myblog.MyBlog.Blog.DAOandTemplate.BlogDAO;
 import com.myblog.MyBlog.Blog.DAOandTemplate.Comment;

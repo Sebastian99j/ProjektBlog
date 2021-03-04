@@ -1,4 +1,4 @@
-package com.myblog.MyBlog.Controllers;
+package com.myblog.MyBlog.Controllers.LoginAndLogut;
 
 import jakarta.servlet.*;
 import jakarta.servlet.http.*;

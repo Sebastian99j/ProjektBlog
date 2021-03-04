@@ -188,4 +188,24 @@ public class BlogDAO {
             throw new RuntimeException(e);
         }
     }
+
+    public List<Comment> findAllComment(){
+        final String sql = "SELECT id, nick_name, comment FROM comments";
+        List<Comment> resultList = new ArrayList<>();
+        try (Connection connection = dataSource.getConnection();
+             Statement statement = connection.createStatement()){
+            ResultSet resultSet = statement.executeQuery(sql);
+            while (resultSet.next()){
+                int id = resultSet.getInt("id");
+                String nick = resultSet.getString("nick_name");
+                String comment = resultSet.getString("comment");
+
+                resultList.add(new Comment(id, nick, comment));
+            }
+        }
+        catch (SQLException e){
+            throw new RuntimeException(e);
+        }
+        return resultList;
+    }
 }

@@ -1,4 +1,4 @@
-package com.myblog.MyBlog.Controllers;
+package com.myblog.MyBlog.Controllers.Home;
 
 import com.myblog.MyBlog.Blog.DAOandTemplate.BlogDAO;
 import jakarta.servlet.*;
@@ -9,8 +9,8 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-@WebServlet("/users")
-public class UsersController extends HttpServlet {
+@WebServlet("")
+public class HomeController extends HttpServlet {
     private final BlogDAO blogDAO = new BlogDAO();
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -21,7 +21,6 @@ public class UsersController extends HttpServlet {
         catch (Exception e){
             e.printStackTrace();
         }
-        request.getRequestDispatcher("/WEB-INF/users.jsp").forward(request, response);
+        request.getRequestDispatcher("/WEB-INF/index.jsp").forward(request, response);
     }
 }
-

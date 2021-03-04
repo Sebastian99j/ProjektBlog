@@ -1,6 +1,7 @@
-package com.myblog.MyBlog.Controllers;
+package com.myblog.MyBlog.Controllers.Post;
 
 import com.myblog.MyBlog.Blog.DAOandTemplate.BlogDAO;
+import com.myblog.MyBlog.Blog.DAOandTemplate.Comment;
 import com.myblog.MyBlog.Blog.DAOandTemplate.Inscription;
 import jakarta.servlet.*;
 import jakarta.servlet.http.*;
@@ -17,6 +18,9 @@ public class PostsController extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         List<Inscription> allPosts = blogDAO.findAll();
         request.setAttribute("posts", allPosts);
+
+        List<Comment> allComment = blogDAO.findAllComment();
+        request.setAttribute("comments", allComment);
         request.getRequestDispatcher("WEB-INF/posty.jsp").forward(request, response);
     }
 
@@ -32,6 +36,9 @@ public class PostsController extends HttpServlet {
         }
         List<Inscription> allPosts = blogDAO.findAll();
         request.setAttribute("posts", allPosts);
+
+        List<Comment> allComment = blogDAO.findAllComment();
+        request.setAttribute("comments", allComment);
         request.getRequestDispatcher("WEB-INF/posty.jsp").forward(request, response);
     }
 

@@ -1,4 +1,4 @@
-package com.myblog.MyBlog.Controllers;
+package com.myblog.MyBlog.Controllers.LoginAndLogut;
 
 import com.myblog.MyBlog.Blog.DAOandTemplate.BlogDAO;
 import jakarta.servlet.*;
