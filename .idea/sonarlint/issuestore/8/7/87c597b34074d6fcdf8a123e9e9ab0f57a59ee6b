@@ -1,0 +1,10 @@
+
+F
+java:S1948")Make "blogDAO" transient or serializable.(ãÀµ´8ÄŞÕÿ.
+O
+java:S1128	"2Remove this unused import 'java.sql.SQLException'.(ÛïÆŸ8Ö—Øÿ.
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(’‘ó¤
+D
+java:S1481"'Remove this unused "xx" local variable.(’˜ùÏ8Ö—Øÿ.
+S
+java:S1854"6Remove this useless assignment to local variable "xx".(’˜ùÏ8Ö—Øÿ.
