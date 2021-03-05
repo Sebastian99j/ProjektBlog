@@ -28,7 +28,8 @@ public class CommentController extends HttpServlet {
         String comment = request.getParameter("kom");
         String nick_name = request.getParameter("nick_name");
         int id = blogDAO.getIdComment();
+        String id_inscription = request.getParameter("id_insc");
 
-        return new Comment(id,nick_name, comment);
+        return new Comment(id,nick_name, comment, Integer.parseInt(id_inscription));
     }
 }

@@ -72,7 +72,7 @@
     </nav>
 </header>
 
-<article>
+<article style="text-align: center;">
     <form method="post" action="posts">
         <div>
             <input type="text" name="nick_name" value="${pageContext.request.remoteUser}" hidden>

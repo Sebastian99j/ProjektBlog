@@ -90,6 +90,7 @@
             <c:if test="${pageContext.request.remoteUser == \"admin\" || pageContext.request.remoteUser == \"John\" }">
                 <form method="post" action="comment">
                     <input type="text" name="nick_name" value="${pageContext.request.remoteUser}" hidden>
+                    <input hidden type="number" name="id_insc" value="${posts.id}">
                     <input type="text" id="kom" name="kom">
                     <input type="submit" value="Dodaj komentarz">
                 </form>
@@ -98,10 +99,12 @@
                 <h4>Komentarze:</h4>
 
             <c:forEach var="comments" items="${requestScope.comments}">
+                <c:if test="${comments.id_inscription == posts.id}">
                 <section>
                     <p>Nazwa użytkownika: <c:out value="${comments.nick_name}"/></p>
                     <p>Komentarz: <c:out value="${comments.comments}"/></p>
                 </section>
+                </c:if>
             </c:forEach>
             </div>
         </section>

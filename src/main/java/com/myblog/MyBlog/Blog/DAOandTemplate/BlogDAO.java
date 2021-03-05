@@ -96,8 +96,10 @@ public class BlogDAO {
 
     public boolean deletePost(int id) {
         final String sql = "DELETE FROM inscription WHERE id = " + id ;
+        final String sql2 = "DELETE FROM comments WHERE id_inscription = " + id;
         try(Connection connection = dataSource.getConnection();
             Statement statement = connection.createStatement()){
+            int updatedRows2 = statement.executeUpdate(sql2);
             int updatedRows = statement.executeUpdate(sql);
             return updatedRows != 0;
         } catch (SQLException e) {
@@ -155,13 +157,14 @@ public class BlogDAO {
     }
 
     public void saveComment (Comment comment){
-        final String sql = String.format("INSERT INTO comments (id, nick_name, comment) VALUES(?,?,?)",
-                comment.getId().toString(), comment.getNick_name(), comment.getComments());
+        final String sql = String.format("INSERT INTO comments (id, nick_name, comment, id_inscription) VALUES(?,?,?,?)",
+                comment.getId().toString(), comment.getNick_name(), comment.getComments(), comment.getId_inscription().toString());
         try (Connection connection = dataSource.getConnection();
              PreparedStatement statement = connection.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS)){
             statement.setString(1, comment.getId().toString());
             statement.setString(2, comment.getNick_name());
             statement.setString(3, comment.getComments());
+            statement.setString(4, comment.getId_inscription().toString());
             statement.executeUpdate();
             ResultSet generatedKeys = statement.getGeneratedKeys();
             if (generatedKeys.next()){
@@ -190,7 +193,7 @@ public class BlogDAO {
     }
 
     public List<Comment> findAllComment(){
-        final String sql = "SELECT id, nick_name, comment FROM comments";
+        final String sql = "SELECT id, nick_name, comment, id_inscription FROM comments";
         List<Comment> resultList = new ArrayList<>();
         try (Connection connection = dataSource.getConnection();
              Statement statement = connection.createStatement()){
@@ -199,8 +202,9 @@ public class BlogDAO {
                 int id = resultSet.getInt("id");
                 String nick = resultSet.getString("nick_name");
                 String comment = resultSet.getString("comment");
+                int id_insc = resultSet.getInt("id_inscription");
 
-                resultList.add(new Comment(id, nick, comment));
+                resultList.add(new Comment(id, nick, comment, id_insc));
             }
         }
         catch (SQLException e){

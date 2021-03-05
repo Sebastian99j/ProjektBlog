@@ -4,11 +4,13 @@ public class Comment {
     int id;
     String nick_name;
     String comments;
+    int id_inscription;
 
-    public Comment(int id, String nick_name, String comments) {
+    public Comment(int id, String nick_name, String comments, int id_inscription) {
         this.id = id;
         this.nick_name = nick_name;
         this.comments = comments;
+        this.id_inscription = id_inscription;
     }
 
     public Integer getId() {
@@ -33,5 +35,13 @@ public class Comment {
 
     public void setComments(String comments) {
         this.comments = comments;
+    }
+
+    public Integer getId_inscription() {
+        return id_inscription;
+    }
+
+    public void setId_inscription(int id_inscription) {
+        this.id_inscription = id_inscription;
     }
 }
