@@ -1,26 +1,29 @@
 
-h	java:S112¼"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8€ÿûöÿ.
+g	java:S112H"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8ÉÆ´©ÿ.
+G
+java:S3457"%String contains no format specifiers.(µëÊéşÿÿÿÿ8äÎ”ûÿ.
+h	java:S112¯"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8¾îöÿ.
+g	java:S112\"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8ş»ûş.
+g	java:S112j"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8üì»—€/
 B
 java:S3457."%String contains no format specifiers.(²ü¼§8äÎ”ûÿ.
 H
-java:S3457"%String contains no format specifiers.(îí’Óüÿÿÿÿ8äÎ”ûÿ.
-h	java:S112‰"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8İøîïÿ.
+java:S3457 "%String contains no format specifiers.(éæ°øÿÿÿÿ8Ç÷¶—€/
 g	java:S112'"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8ÅÄºúş.
-g	java:S112\"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8ş»ûş.
-g	java:S112x"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8¢È«ÿ.
-h	java:S112Ï"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8¡¿•ûÿ.
-h	java:S112¬"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8¾îöÿ.
-h	java:S112™"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8Óôïÿ.
-g	java:S112h"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8²Œ¢ûş.
-l
-java:S1192T"JDefine a constant instead of duplicating this literal "nick_name" 3 times.(Ï÷÷úÿÿÿÿ8¡¿•ûÿ.
-q
-java:S1128"TRemove this unnecessary import: same package classes are always implicitly imported.(§Ü—¦8Ú·ëúÿ.
-g	java:S112H"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8ÉÆ´©ÿ.
-g	java:S112>"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8ŸŒâúş.
+h	java:S112›"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8Óôïÿ.
 o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Äé›š
 B
 java:S3457,"%String contains no format specifiers.(¯²Ê¤8äÎ”ûÿ.
-G
-java:S3457"%String contains no format specifiers.(µëÊéşÿÿÿÿ8äÎ”ûÿ.
+s	java:S117Í"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(÷¶‹óúÿÿÿÿ8ü Õ–€/
+h	java:S112Ó"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8¡¿•ûÿ.
+h	java:S112‹"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8İøîïÿ.
+g	java:S112>"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8ŸŒâúş.
+l
+java:S1192T"JDefine a constant instead of duplicating this literal "nick_name" 3 times.(Ï÷÷úÿÿÿÿ8¡¿•ûÿ.
 g	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8½øş.
+g	java:S112z"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8¢È«ÿ.
+h	java:S112¿"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8€ÿûöÿ.
+q
+java:S1128"TRemove this unnecessary import: same package classes are always implicitly imported.(§Ü—¦8Ú·ëúÿ.
+M
+java:S1481f"1Remove this unused "updatedRows2" local variable.(äà‹K8¤Ë¿—€/

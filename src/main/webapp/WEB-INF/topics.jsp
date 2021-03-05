@@ -18,7 +18,7 @@
     <!--<![endif]-->
     <style>
         <%@ include file="css/bootstrap.min.css"%>
-        <%@include file="css/mainPage.css"%>
+        <%@ include file="css/mainPage.css"%>
     </style>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 <body>
@@ -51,11 +51,11 @@
                     </li>
                 </c:if>
 
-                <li class="nav-item active">
+                <li class="nav-item">
                     <a class="nav-link" href="users"> Lista użytkowników </a>
                 </li>
 
-                <li class="nav-item">
+                <li class="nav-item active">
                     <a class="nav-link" href="topics"> Tematy </a>
                 </li>
 
@@ -72,18 +72,19 @@
     </nav>
 </header>
 
-<article>
-    <div style="padding: 20px;">
-        <fieldset>
-            <h1>Użytkownicy</h1>
-            <c:forEach var="user" items="${requestScope.users}">
-                <p class="usrs">${user}</p>
-            </c:forEach>
-        </fieldset>
+<article style="text-align: center">
+    <h1>Tematy:</h1>
+    <input class="xbutton" type="button" value="Dodaj post" onClick="location.href='${pageContext.request.contextPath}/addPost';"/>
+    <div style="margin-top: 100px">
+    <c:forEach var="topics" items="${requestScope.topics}">
+        <form method="post" action="posts">
+        <input style="min-width: 500px" type="submit" name="topic" value="${topics}">
+        </form>
+    </c:forEach>
     </div>
 </article>
 
-<footer>
+<footer style="position: relative;">
     <div class="stopka">
         <p id="trescStopki">Copyright 2021 oNiczym.blog wszelkie prawa zastrzeżone</p>
     </div>
@@ -92,8 +93,6 @@
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="js/bootstrap.min.js"></script>
-<script>
-    <%@include file="js/skrypt1.js"%>
-</script>
+
 </body>
 </html>

@@ -56,7 +56,7 @@
                 </li>
 
                 <li class="nav-item active">
-                    <a class="nav-link" href="posts"> Tematy </a>
+                    <a class="nav-link" href="topics"> Tematy </a>
                 </li>
 
             </ul>
@@ -73,7 +73,7 @@
 </header>
 
 <article style="text-align: center;">
-    <form method="post" action="posts">
+    <form method="post" action="savepost">
         <div>
             <input type="text" name="nick_name" value="${pageContext.request.remoteUser}" hidden>
             <p>Nazwa użytkownika: ${pageContext.request.remoteUser}</p>

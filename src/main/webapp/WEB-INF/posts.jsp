@@ -18,7 +18,7 @@
     <!--<![endif]-->
     <style>
         <%@ include file="css/bootstrap.min.css"%>
-        <%@include file="css/mainPage.css"%>
+        <%@include file="css/posts.css"%>
     </style>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 <body>
@@ -51,11 +51,11 @@
                     </li>
                 </c:if>
 
-                <li class="nav-item active">
+                <li class="nav-item">
                     <a class="nav-link" href="users"> Lista użytkowników </a>
                 </li>
 
-                <li class="nav-item">
+                <li class="nav-item active">
                     <a class="nav-link" href="topics"> Tematy </a>
                 </li>
 
@@ -63,7 +63,7 @@
 
             <form class="form-inline" id="search" method="get" action="">
 
-                <input class="form-control mr-1 mt-2" type="text" placeholder="Wyszukaj" aria-label="Wyszukaj" name="q">
+                <input style="text-align: left" class="form-control mr-1 mt-2" type="text" placeholder="Wyszukaj" aria-label="Wyszukaj" name="q">
                 <input type="hidden" name="sitesearch" value="${pageContext.request.contextPath}/">
                 <button class="btn btn-light mt-2" type="submit">Znajdź</button>
             </form>
@@ -73,14 +73,44 @@
 </header>
 
 <article>
-    <div style="padding: 20px;">
-        <fieldset>
-            <h1>Użytkownicy</h1>
-            <c:forEach var="user" items="${requestScope.users}">
-                <p class="usrs">${user}</p>
-            </c:forEach>
-        </fieldset>
-    </div>
+    <h1>Posty</h1>
+    <c:forEach var="posts" items="${requestScope.thisPost}">
+        <section  class="posty">
+            <h4>Nick: ${posts.nick_name} ID:${posts.id}</h4>
+            <h4>Temat: ${posts.title}</h4>
+            <h4>Wpis:</h4>
+            <p><c:out value="${posts.inscriptions}"/></p>
+            <c:if test="${pageContext.request.remoteUser == \"admin\" }">
+                <form action="deletePost" method="get">
+                    <input hidden name="idPost" value="${posts.id}">
+                    <input type="submit" value="Usuń">
+                </form>
+            </c:if>
+            <c:if test="${pageContext.request.remoteUser == \"admin\" || pageContext.request.remoteUser == \"John\" }">
+                <form method="post" action="comment">
+                    <input type="text" name="nick_name" value="${pageContext.request.remoteUser}" hidden>
+                    <input hidden type="number" name="id_insc" value="${posts.id}">
+                    <input type="text" id="kom" name="kom">
+                    <input type="submit" value="Dodaj komentarz">
+                </form>
+            </c:if>
+            <div id="komentarz" style="background-color: cornflowerblue;">
+                <h4>Komentarze:</h4>
+
+                <c:forEach var="comments" items="${requestScope.comments}">
+                    <div style="background-color: #117a8b">
+                        <c:if test="${comments.id_inscription == posts.id}">
+                            <section>
+                                <h6>Nazwa użytkownika: </h6><p><c:out value="${comments.nick_name}"/></p>
+                                <h6>Komentarz: </h6><p><c:out value="${comments.comments}"/></p>
+                            </section>
+                        </c:if>
+                    </div>
+                </c:forEach>
+            </div>
+        </section>
+        <p></p>
+    </c:forEach>
 </article>
 
 <footer>

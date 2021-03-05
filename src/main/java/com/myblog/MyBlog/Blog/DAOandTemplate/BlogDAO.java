@@ -94,6 +94,45 @@ public class BlogDAO {
         return resultList;
     }
 
+    public List<String> findTopics(){
+        final String sql = "SELECT title FROM inscription";
+        List<String> resultList = new ArrayList<>();
+        try (Connection connection = dataSource.getConnection();
+             Statement statement = connection.createStatement()){
+            ResultSet resultSet = statement.executeQuery(sql);
+            while (resultSet.next()){
+                String title = resultSet.getString("title");
+
+                resultList.add(title);
+            }
+        }
+        catch (SQLException e){
+            throw new RuntimeException(e);
+        }
+        return resultList;
+    }
+
+    public List<Inscription> getPostbyTitle(String titleIns){
+        final String sql = "SELECT id, nick_name, title, inscritpions FROM inscription WHERE title = \"" + titleIns + "\"";
+        List<Inscription> resultList = new ArrayList<>();
+        try (Connection connection = dataSource.getConnection();
+             Statement statement = connection.createStatement()){
+            ResultSet resultSet = statement.executeQuery(sql);
+            while (resultSet.next()){
+                int inscId = resultSet.getInt("id");
+                String inscNick = resultSet.getString("nick_name");
+                String title = resultSet.getString("title");
+                String inscs = resultSet.getString("inscritpions");
+
+                resultList.add(new Inscription(inscId, inscNick, title, inscs));
+            }
+        }
+        catch (SQLException e){
+            throw new RuntimeException(e);
+        }
+        return resultList;
+    }
+
     public boolean deletePost(int id) {
         final String sql = "DELETE FROM inscription WHERE id = " + id ;
         final String sql2 = "DELETE FROM comments WHERE id_inscription = " + id;

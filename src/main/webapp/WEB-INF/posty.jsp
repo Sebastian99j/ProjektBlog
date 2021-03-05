@@ -56,14 +56,14 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="posts"> Tematy </a>
+                    <a class="nav-link" href="topics"> Tematy </a>
                 </li>
 
             </ul>
 
             <form class="form-inline" id="search" method="get" action="">
 
-                <input class="form-control mr-1 mt-2" type="text" placeholder="Wyszukaj" aria-label="Wyszukaj" name="q">
+                <input style="text-align: left" class="form-control mr-1 mt-2" type="text" placeholder="Wyszukaj" aria-label="Wyszukaj" name="q">
                 <input type="hidden" name="sitesearch" value="${pageContext.request.contextPath}/">
                 <button class="btn btn-light mt-2" type="submit">Znajdź</button>
             </form>
@@ -74,7 +74,6 @@
 
 <article>
     <h1>Posty</h1>
-    <input class="xbutton" type="button" value="Dodaj post" onClick="location.href='${pageContext.request.contextPath}/addPost';"/>
     <c:forEach var="posts" items="${requestScope.posts}">
         <section  class="posty">
             <h4>Nick: ${posts.nick_name} ID:${posts.id}</h4>
@@ -99,12 +98,14 @@
                 <h4>Komentarze:</h4>
 
             <c:forEach var="comments" items="${requestScope.comments}">
+                <div style="background-color: #117a8b">
                 <c:if test="${comments.id_inscription == posts.id}">
                 <section>
-                    <p>Nazwa użytkownika: <c:out value="${comments.nick_name}"/></p>
-                    <p>Komentarz: <c:out value="${comments.comments}"/></p>
+                    <h6>Nazwa użytkownika: </h6><p><c:out value="${comments.nick_name}"/></p>
+                    <h6>Komentarz: </h6><p><c:out value="${comments.comments}"/></p>
                 </section>
                 </c:if>
+                </div>
             </c:forEach>
             </div>
         </section>

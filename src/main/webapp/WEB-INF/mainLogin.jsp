@@ -56,7 +56,7 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="posts"> Tematy </a>
+                    <a class="nav-link" href="topics"> Tematy </a>
                 </li>
 
             </ul>

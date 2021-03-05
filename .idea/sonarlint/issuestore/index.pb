@@ -65,3 +65,11 @@ u
 Esrc/main/java/com/myblog/MyBlog/Controllers/Post/PostsController.java,1\3\13a5bd98c293272238252b6000b6e30ab6fb4b2d
 Q
 !src/main/webapp/WEB-INF/posty.jsp,3\4\34acddaa2dcfd75d1222600327cd65c5eea5acc8
+Z
+*src/main/webapp/WEB-INF/css/style_mail.css,3\8\38a13b95a21edb65f6b6b7c10cbe4374417f6ba6
+X
+(src/main/webapp/WEB-INF/css/register.css,f\8\f8fce8d4e8509e9a088a2a500c99f21e0e398ef3
+U
+%src/main/webapp/WEB-INF/css/posts.css,b\7\b790f3d6df989fbf1277385579ac68cd8e165a05
+X
+(src/main/webapp/WEB-INF/css/mainPage.css,5\7\5725b273001ea608ef59a908c2c0d3654f9250e5

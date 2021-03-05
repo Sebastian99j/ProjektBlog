@@ -21,7 +21,7 @@ public class CommentController extends HttpServlet {
         catch (Exception e){
             System.out.println("Nie udało się");
         }
-        response.sendRedirect(request.getContextPath()+"/posts");
+        response.sendRedirect(request.getContextPath()+"/topics");
     }
 
     private Comment prepareComment(HttpServletRequest request){
