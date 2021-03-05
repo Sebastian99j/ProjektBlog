@@ -18,40 +18,7 @@
     <!--<![endif]-->
     <style>
         <%@ include file="css/bootstrap.min.css"%>
-        h1 {
-            text-align: center;
-            font-size: 65px;
-        }
-        h3 {
-            margin-top: 100px;
-        }
-        h3 ul, label{
-            font-size: 25px;
-        }
-        a:visited {
-            color: blue;
-        }
-        .navbar {
-            min-height: 75px;
-        }
-        #trescStopki {
-            margin-left: 50px;
-            float: left;
-        }
-        html {
-            height:100%
-        }
-        body {
-            min-height:100%;
-            postion:relative;
-        }
-        footer {
-            position:absolute;
-            bottom:0;
-        }
-         * {
-             text-align: center;
-         }
+        <%@ include file="css/mainPage.css"%>
     </style>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 <body>

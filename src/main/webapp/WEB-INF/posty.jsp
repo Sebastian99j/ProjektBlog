@@ -18,44 +18,7 @@
     <!--<![endif]-->
     <style>
         <%@ include file="css/bootstrap.min.css"%>
-        * {
-            text-align: center;
-        }
-        h1 {
-            text-align: center;
-            font-size: 65px;
-        }
-        h3 {
-            margin-top: 100px;
-        }
-        h3 ul, label{
-            font-size: 25px;
-        }
-        a:visited {
-            color: blue;
-        }
-        .navbar {
-            min-height: 75px;
-        }
-        #trescStopki {
-            margin-left: 50px;
-            float: left;
-        }
-        html {
-            height:100%
-        }
-        body {
-            min-height:100%;
-            postion:relative;
-            background-color: white;
-        }
-        footer {
-            position:relative;
-            bottom:0;
-        }
-        .posty {
-            background-color: grey;
-        }
+        <%@include file="css/posts.css"%>
     </style>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 <body>
@@ -157,13 +120,6 @@
 <script src="js/bootstrap.min.js"></script>
 <script>
     <%@include file="js/skrypt1.js"%>
-</script>
-<script>
-    function addKom() {
-        let tekst = document.getElementById("kom").value;
-        const div = document.getElementById("komentarz");
-        div.innerHTML+= "<p>"+tekst+"</p>";
-    }
 </script>
 </body>
 </html>

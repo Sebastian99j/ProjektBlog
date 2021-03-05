@@ -1,7 +1,0 @@
-
-K
-java:S1948")Make "blogDAO" transient or serializable.(ÁÆšıúÿÿÿÿ8”òØşş.
-U	java:S106"9Replace this use of System.out or System.err by a logger.(ËĞï†8 ş­€ÿ.
-U	java:S106"9Replace this use of System.out or System.err by a logger.(™ë‹‘8àÄ€ÿ.
-o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(’‘ó¤
-m	java:S117("QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¶Á³ˆ8¯ïœ€ÿ.

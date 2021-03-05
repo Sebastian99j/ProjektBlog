@@ -3,33 +3,7 @@
 <head>
     <title>Rejestracja</title>
     <style>
-        * {
-            text-align: center;
-        }
-        body {
-            margin-top: 50px;
-        }
-        .xbutton {
-            font-size: 20px;
-            color: black;
-            border: 1px solid black;
-            background: none;
-            padding: 10px 15px;
-            font-weight: 400;
-            font-family: 'Hammersmith One', sans-serif;
-            border-radius: 2px;
-            display: inline-block;
-            margin: 0 auto;
-            width: 200px;
-        }
-        .xbutton:hover {
-            background: #075181;
-            background: -webkit-linear-gradient(top, #075181, #3cddd1);
-            background: -moz-linear-gradient(top, #075181, #3cddd1);
-            background: -o-linear-gradient(top, #075181, #3cddd1);
-            background: -ms-linear-gradient(top, #075181, #3cddd1);
-            background: linear-gradient(top, #075181, #3cddd1);
-        }
+        <%@include file="css/register.css"%>
     </style>
 </head>
 <body>

@@ -1,0 +1,8 @@
+
+K
+java:S1948")Make "blogDAO" transient or serializable.(ÁÆšıúÿÿÿÿ8‡ÊÓÕÿ.
+V
+java:S1854"9Remove this useless assignment to local variable "lista".(ØÔ«8‡ÊÓÕÿ.
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ö›˜±
+G
+java:S1481"*Remove this unused "lista" local variable.(ØÔ«8‡ÊÓÕÿ.

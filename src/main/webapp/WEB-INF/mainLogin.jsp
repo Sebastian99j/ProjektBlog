@@ -18,60 +18,7 @@
     <!--<![endif]-->
     <style>
         <%@ include file="css/bootstrap.min.css"%>
-        h1 {
-            text-align: center;
-            font-size: 65px;
-        }
-        h3 {
-            margin-top: 100px;
-        }
-        h3 ul, label{
-            font-size: 25px;
-        }
-        a:visited {
-            color: blue;
-        }
-        .navbar {
-            min-height: 75px;
-        }
-        #trescStopki {
-            margin-left: 50px;
-            float: left;
-        }
-        #zegar {
-        }
-        html {
-            height:100%
-        }
-        body {
-            min-height:100%;
-            postion:relative;
-        }
-        footer {
-            position:absolute;
-            bottom:0;
-        }
-        .xbutton {
-            font-size: 20px;
-            color: black;
-            border: 1px solid black;
-            background: none;
-            padding: 10px 15px;
-            font-weight: 400;
-            font-family: 'Hammersmith One', sans-serif;
-            border-radius: 2px;
-            display: inline-block;
-            margin: 0 auto;
-            width: 200px;
-        }
-        .xbutton:hover {
-            background: #075181;
-            background: -webkit-linear-gradient(top, #075181, #3cddd1);
-            background: -moz-linear-gradient(top, #075181, #3cddd1);
-            background: -o-linear-gradient(top, #075181, #3cddd1);
-            background: -ms-linear-gradient(top, #075181, #3cddd1);
-            background: linear-gradient(top, #075181, #3cddd1);
-        }
+        <%@ include file="css/mainPage.css"%>
     </style>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 <body>
