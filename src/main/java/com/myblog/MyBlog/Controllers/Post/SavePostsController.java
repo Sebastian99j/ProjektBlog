@@ -18,10 +18,10 @@ public class SavePostsController extends HttpServlet {
         try {
             Inscription inscription = getInscriptionFromParameters(request);
             blogDAO.savePost(inscription);
-            System.out.println("Udało się");
+            System.out.println("Udało się zapisać post");
         }
         catch (Exception e){
-            System.out.println("Nie udało się");
+            System.out.println("Nie udało się zapisać postu");
         }
     response.sendRedirect(request.getContextPath()+"/topics");
     }

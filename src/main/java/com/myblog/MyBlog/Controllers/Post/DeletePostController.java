@@ -14,6 +14,6 @@ public class DeletePostController extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String idKom = request.getParameter("idPost");
         blogDAO.deletePost(Integer.parseInt(idKom));
-        response.sendRedirect(request.getContextPath()+"/posts");
+        response.sendRedirect(request.getContextPath()+"/topics");
     }
 }

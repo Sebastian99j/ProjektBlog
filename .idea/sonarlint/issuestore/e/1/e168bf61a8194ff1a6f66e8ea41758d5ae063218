@@ -1,0 +1,11 @@
+
+D
+java:S1948")Make "blogDAO" transient or serializable.(ÁÆšıúÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(™ë‹‘
+f	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¶Á³ˆ
+M
+java:S1128"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8‡€²€/
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ö›˜±
+l
+java:S1128"JRemove this unused import 'com.myblog.MyBlog.Blog.DAOandTemplate.Comment'.(®õµÏùÿÿÿÿ8‡€²€/
+N	java:S106"9Replace this use of System.out or System.err by a logger.(ËĞï†

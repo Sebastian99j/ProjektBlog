@@ -19,6 +19,7 @@
     <style>
         <%@ include file="css/bootstrap.min.css"%>
         <%@ include file="css/mainPage.css"%>
+        <%@ include file="css/navbar.css"%>
     </style>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 <body>
@@ -26,7 +27,7 @@
 <header>
     <nav class="navbar navbar-dark bg-primary navbar-expand-lg">
 
-        <a class="navbar-brand" href="${pageContext.request.contextPath}"><img src="slajdy/logo.png"></a>
+        <a class="navbar-brand" href="${pageContext.request.contextPath}" id="naglowek">oNiczym.blog</a>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainmenu" aria-controls="mainmenu" aria-expanded="false" aria-label="Przełącznik nawigacji">
             <span class="navbar-toggler-icon"></span>
@@ -61,6 +62,12 @@
 
             </ul>
 
+            <ul class="navbar-nav mr-auto" style="margin-top: 20px; margin-left:-100px; color: white;">
+                <li class="nav-item">
+                    <p id="zegar"></p>
+                </li>
+            </ul>
+
             <form class="form-inline" id="search" method="get" action="">
 
                 <input class="form-control mr-1 mt-2" type="text" placeholder="Wyszukaj" aria-label="Wyszukaj" name="q">
@@ -72,21 +79,24 @@
     </nav>
 </header>
 
-<article>
+<article style="font-family: 'Malgun Gothic'">
     <div style="text-align: center; float: top;">
         <c:if test="${pageContext.request.remoteUser != null }">
             <p>Jesteś zalogowany jako ${pageContext.request.remoteUser}</p>
         </c:if>
     </div>
-    <div style="margin-left: 20px; float: left">
-        <p id="zegar"></p>
-        <p>Użytkownicy:</p>
-        <c:forEach var="user" items="${requestScope.users}">
-            <p>${user}</p>
-        </c:forEach>
-    </div>
+<%--    <div style="margin-left: 20px; float: left">--%>
+<%--        <p>Użytkownicy:</p>--%>
+<%--        <c:forEach var="user" items="${requestScope.users}">--%>
+<%--            <p>${user}</p>--%>
+<%--        </c:forEach>--%>
+<%--    </div>--%>
     <div style="text-align: center;">
         <h1>Blog</h1>
+        <p>Witaj na moim blogu!<br>
+        Obowiązują tutaj następujące zasady:<br>
+        -Aby dodawać posty musisz posiadać konto<br>
+        -Aby dodawać komentarze musisz posiadać konto<br></p>
     </div>
 </article>
 

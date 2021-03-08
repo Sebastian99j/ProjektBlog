@@ -19,6 +19,7 @@
     <style>
         <%@ include file="css/bootstrap.min.css"%>
         <%@include file="css/mainPage.css"%>
+        <%@ include file="css/navbar.css"%>
     </style>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 <body>
@@ -26,7 +27,7 @@
 <header>
     <nav class="navbar navbar-dark bg-primary navbar-expand-lg">
 
-        <a class="navbar-brand" href="${pageContext.request.contextPath}"><img src="slajdy/logo.png"></a>
+        <a class="navbar-brand" href="${pageContext.request.contextPath}" id="naglowek">oNiczym.blog</a>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainmenu" aria-controls="mainmenu" aria-expanded="false" aria-label="Przełącznik nawigacji">
             <span class="navbar-toggler-icon"></span>
@@ -59,6 +60,12 @@
                     <a class="nav-link" href="topics"> Tematy </a>
                 </li>
 
+            </ul>
+
+            <ul class="navbar-nav mr-auto" style="margin-top: 20px; margin-left:-100px; color: white;">
+                <li class="nav-item">
+                    <p id="zegar"></p>
+                </li>
             </ul>
 
             <form class="form-inline" id="search" method="get" action="">

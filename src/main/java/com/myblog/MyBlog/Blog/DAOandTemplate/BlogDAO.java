@@ -216,7 +216,7 @@ public class BlogDAO {
     }
 
     public Integer getIdComment(){
-        final String sql = "SELECT id FROM comments";
+        final String sql = "SELECT id FROM comments ORDER BY id asc;";
         int id = 0;
         try (Connection connection = dataSource.getConnection();
              Statement statement = connection.createStatement()){
@@ -224,7 +224,8 @@ public class BlogDAO {
             while (resultSet.next()){
                 id = resultSet.getInt("id");
             }
-            return id+1;
+            System.out.println(id);
+            return ++id;
         }
         catch (SQLException e){
             throw new RuntimeException(e);

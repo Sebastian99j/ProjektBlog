@@ -19,6 +19,7 @@
     <style>
         <%@ include file="css/bootstrap.min.css"%>
         <%@include file="css/posts.css"%>
+        <%@ include file="css/navbar.css"%>
     </style>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 <body>
@@ -26,7 +27,7 @@
 <header>
     <nav class="navbar navbar-dark bg-primary navbar-expand-lg">
 
-        <a class="navbar-brand" href="${pageContext.request.contextPath}"><img src="slajdy/logo.png"></a>
+        <a class="navbar-brand" href="${pageContext.request.contextPath}" id="naglowek">oNiczym.blog</a>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainmenu" aria-controls="mainmenu" aria-expanded="false" aria-label="Przełącznik nawigacji">
             <span class="navbar-toggler-icon"></span>
@@ -61,6 +62,12 @@
 
             </ul>
 
+            <ul class="navbar-nav mr-auto" style="margin-top: 20px; margin-left:-100px; color: white;">
+                <li class="nav-item">
+                    <p id="zegar"></p>
+                </li>
+            </ul>
+
             <form class="form-inline" id="search" method="get" action="">
 
                 <input style="text-align: left" class="form-control mr-1 mt-2" type="text" placeholder="Wyszukaj" aria-label="Wyszukaj" name="q">
@@ -86,14 +93,17 @@
                     <input type="submit" value="Usuń">
                 </form>
             </c:if>
-            <c:if test="${pageContext.request.remoteUser == \"admin\" || pageContext.request.remoteUser == \"John\" }">
-                <form method="post" action="comment">
+            <c:forEach items="${requestScope.users}" var="user">
+            <c:if test="${pageContext.request.remoteUser == user}">
+                <form method="post" action="posts">
+                    <input type="text" hidden name="post_name" value="${posts.title}">
                     <input type="text" name="nick_name" value="${pageContext.request.remoteUser}" hidden>
                     <input hidden type="number" name="id_insc" value="${posts.id}">
                     <input type="text" id="kom" name="kom">
                     <input type="submit" value="Dodaj komentarz">
                 </form>
             </c:if>
+            </c:forEach>
             <div id="komentarz" style="background-color: cornflowerblue;">
                 <h4>Komentarze:</h4>
 

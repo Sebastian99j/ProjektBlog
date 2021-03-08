@@ -28,7 +28,7 @@
                     <input id="city_u" name="city_u" type="text">
                 </div>
                 <input class="xbutton" type="submit" value="Zatwierdź">
-                <input class="xbutton" type="button" value="Wróć" onClick="location.href='${pageContext.request.contextPath}/';"/>
+                <input class="xbutton" type="button" value="Wróć" onClick="location.href='${pageContext.request.contextPath}/join';"/>
             </form>
         </fieldset>
     </article>

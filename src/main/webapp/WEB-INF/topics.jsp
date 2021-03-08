@@ -19,6 +19,7 @@
     <style>
         <%@ include file="css/bootstrap.min.css"%>
         <%@ include file="css/mainPage.css"%>
+        <%@ include file="css/navbar.css"%>
     </style>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 <body>
@@ -26,7 +27,7 @@
 <header>
     <nav class="navbar navbar-dark bg-primary navbar-expand-lg">
 
-        <a class="navbar-brand" href="${pageContext.request.contextPath}"><img src="slajdy/logo.png"></a>
+        <a class="navbar-brand" href="${pageContext.request.contextPath}" id="naglowek">oNiczym.blog</a>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainmenu" aria-controls="mainmenu" aria-expanded="false" aria-label="Przełącznik nawigacji">
             <span class="navbar-toggler-icon"></span>
@@ -61,6 +62,12 @@
 
             </ul>
 
+            <ul class="navbar-nav mr-auto" style="margin-top: 20px; margin-left:-100px; color: white;">
+                <li class="nav-item">
+                    <p id="zegar"></p>
+                </li>
+            </ul>
+
             <form class="form-inline" id="search" method="get" action="">
 
                 <input class="form-control mr-1 mt-2" type="text" placeholder="Wyszukaj" aria-label="Wyszukaj" name="q">
@@ -75,9 +82,9 @@
 <article style="text-align: center">
     <h1>Tematy:</h1>
     <input class="xbutton" type="button" value="Dodaj post" onClick="location.href='${pageContext.request.contextPath}/addPost';"/>
-    <div style="margin-top: 100px">
+    <div style="margin-top: 50px">
     <c:forEach var="topics" items="${requestScope.topics}">
-        <form method="post" action="posts">
+        <form method="get" action="posts">
         <input style="min-width: 500px" type="submit" name="topic" value="${topics}">
         </form>
     </c:forEach>
@@ -94,5 +101,8 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="js/bootstrap.min.js"></script>
 
+<script>
+    <%@include file="js/skrypt1.js"%>
+</script>
 </body>
 </html>
