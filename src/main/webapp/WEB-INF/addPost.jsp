@@ -20,6 +20,7 @@
         <%@ include file="css/bootstrap.min.css"%>
         <%@ include file="css/mainPage.css"%>
         <%@ include file="css/navbar.css"%>
+        <%@ include file="css/addPost.css"%>
     </style>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 <body>
@@ -85,15 +86,15 @@
             <input type="text" name="nick_name" value="${pageContext.request.remoteUser}" hidden>
             <p>Nazwa użytkownika: ${pageContext.request.remoteUser}</p>
         </div>
-        <div>
+        <div class="titleLabel">
             <label for="title">Tytuł:</label>
-            <input id="title" type="text" name="title">
+            <input class="titleItem" id="title" type="text" name="title">
         </div>
+        <label for="inscriptions">Treść:</label>
         <div>
-            <label for="inscriptions">Treść:</label>
-            <textarea id="inscriptions" name="inscriptions"></textarea>
+            <textarea class="textField" id="inscriptions" name="inscriptions"></textarea>
         </div>
-        <input type="submit" value="Zatwierdź">
+        <input class="xbutton" type="submit" value="Zatwierdź">
     </form>
 </article>
 </body>

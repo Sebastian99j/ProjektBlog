@@ -1,15 +1,15 @@
 
-V
-java:S1854"9Remove this useless assignment to local variable "lista".(ØÔ«8¸ÿÿÁ€/
-v	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ö›˜±8Ÿğ™š€/
+U	java:S106/"9Replace this use of System.out or System.err by a logger.(…œ®8Öš¬Á€/
 G
 java:S1481"*Remove this unused "lista" local variable.(ØÔ«8¸ÿÿÁ€/
-r	java:S1171"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(€›Ã±ıÿÿÿÿ8Ö¡ëÁ€/
-r	java:S1179"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ï„¡êùÿÿÿÿ8ø¼«Á€/
-U	java:S106"9Replace this use of System.out or System.err by a logger.(ËĞï†8ìÖÚœ€/
-U	java:S106"9Replace this use of System.out or System.err by a logger.(™ë‹‘8Ÿğ™š€/
+m	java:S1177"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¶Á³ˆ8ø¼«Á€/
+v	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ö›˜±8Ÿğ™š€/
+V
+java:S1854"9Remove this useless assignment to local variable "lista".(ØÔ«8¸ÿÿÁ€/
 K
 java:S1948")Make "blogDAO" transient or serializable.(ÁÆšıúÿÿÿÿ8Ÿğ™š€/
-m	java:S1177"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¶Á³ˆ8ø¼«Á€/
-U	java:S106,"9Replace this use of System.out or System.err by a logger.(ËĞï†8Öš¬Á€/
-U	java:S106/"9Replace this use of System.out or System.err by a logger.(™ë‹‘8Öš¬Á€/
+Z	java:S106,"9Replace this use of System.out or System.err by a logger.(‰¹…úşÿÿÿÿ8Öš¬Á€/
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(¦¿¾Éúÿÿÿÿ8Ÿğ™š€/
+r	java:S1179"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ï„¡êùÿÿÿÿ8ø¼«Á€/
+r	java:S1171"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(€›Ã±ıÿÿÿÿ8Ö¡ëÁ€/
+T	java:S106"9Replace this use of System.out or System.err by a logger.(—êß(8ìÖÚœ€/

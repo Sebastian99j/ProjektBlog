@@ -1,33 +1,34 @@
 
-N
-java:S1481"1Remove this unused "updatedRows2" local variable.(äà‹K8¤Ë¿—€/
-B
-java:S3457,"%String contains no format specifiers.(¯²Ê¤8äÎ”ûÿ.
-h	java:S112ƒ"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8¾ÊÎœ€/
-q
-java:S1128"TRemove this unnecessary import: same package classes are always implicitly imported.(§Ü—¦8Ú·ëúÿ.
 h	java:S112Â"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8Óôïÿ.
-g	java:S112n"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8—²“™€/
-h
-java:S1192U"FDefine a constant instead of duplicating this literal "title" 3 times.(¡ŞÃûÿÿÿÿ8¾ÊÎœ€/
-h	java:S112‘"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8üì»—€/
-B
-java:S3457."%String contains no format specifiers.(²ü¼§8äÎ”ûÿ.
-l
-java:S1192T"JDefine a constant instead of duplicating this literal "nick_name" 4 times.(Ï÷÷úÿÿÿÿ8¡¿•ûÿ.
-o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Äé›š
-h	java:S112æ"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8€ÿûöÿ.
+g	java:S112>"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8ŸŒâúş.
+V	java:S106ã"9Replace this use of System.out or System.err by a logger.(ö¡¹ê8Ñä½ù€/
 g	java:S112H"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8ÉÆ´©ÿ.
-h	java:S112ú"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8¡¿•ûÿ.
-g	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8½øş.
-g	java:S112\"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8ş»ûş.
-g	java:S112'"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8ÅÄºúş.
+h	java:S112ç"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8€ÿûöÿ.
 h	java:S112Ö"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8¾îöÿ.
-h	java:S112¡"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8¢È«ÿ.
+h	java:S112‘"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8üì»—€/
 G
 java:S3457"%String contains no format specifiers.(µëÊéşÿÿÿÿ8äÎ”ûÿ.
+h	java:S112²"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8İøîïÿ.
+h	java:S112ƒ"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8¾ÊÎœ€/
+N
+java:S1481"1Remove this unused "updatedRows2" local variable.(äà‹K8¤Ë¿—€/
+g	java:S112\"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8ş»ûş.
+g	java:S112'"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8ÅÄºúş.
+h	java:S112¡"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8¢È«ÿ.
+g	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8½øş.
+B
+java:S3457."%String contains no format specifiers.(²ü¼§8äÎ”ûÿ.
 H
 java:S3457Ç"%String contains no format specifiers.(éæ°øÿÿÿÿ8Ç÷¶—€/
-h	java:S112²"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8İøîïÿ.
-g	java:S112>"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8ŸŒâúş.
-s	java:S117ô"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(÷¶‹óúÿÿÿÿ8ü Õ–€/
+h
+java:S1192U"FDefine a constant instead of duplicating this literal "title" 3 times.(¡ŞÃûÿÿÿÿ8¾ÊÎœ€/
+B
+java:S3457,"%String contains no format specifiers.(¯²Ê¤8äÎ”ûÿ.
+l
+java:S1192T"JDefine a constant instead of duplicating this literal "nick_name" 4 times.(Ï÷÷úÿÿÿÿ8¡¿•ûÿ.
+g	java:S112n"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8—²“™€/
+s	java:S117õ"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(÷¶‹óúÿÿÿÿ8ü Õ–€/
+h	java:S112û"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8¡¿•ûÿ.
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Äé›š
+q
+java:S1128"TRemove this unnecessary import: same package classes are always implicitly imported.(§Ü—¦8Ú·ëúÿ.

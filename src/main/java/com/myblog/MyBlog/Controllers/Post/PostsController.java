@@ -33,7 +33,7 @@ public class PostsController extends HttpServlet {
 
         List<Comment> allComment = blogDAO.findAllComment();
         request.setAttribute("comments", allComment);
-        request.getRequestDispatcher("WEB-INF/posts.jsp").forward(request, response);
+        request.getRequestDispatcher("/WEB-INF/posts.jsp").forward(request, response);
     }
 
     @Override

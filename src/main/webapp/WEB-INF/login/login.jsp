@@ -6,6 +6,20 @@
         * {
             text-align: center;
         }
+        h1 {
+            margin-top: 100px;
+        }
+        fieldset {
+            width: 400px;
+            display: inline-block;
+            float: contour;
+        }
+        .fields {
+            margin-left: -94px;
+        }
+        body {
+            background-color: #c6c8ca;
+        }
     </style>
 </head>
 <body>
@@ -13,16 +27,16 @@
 <form action="j_security_check" method="post">
     <fieldset>
         <legend>Wprowadź swoje dane</legend>
-        <div>
-            <label for="username">Nazwa użytkownika</label>
+        <div class="fields">
+            <label for="username">Nazwa użytkownika:</label>
             <input name="j_username" placeholder="username" id="username">
         </div>
         <div>
-            <label for="password">Hasło</label>
+            <label for="password">Hasło:</label>
             <input name="j_password" placeholder="password" type="password" id="password">
         </div>
+        <button type="submit">Zaloguj się</button>
     </fieldset>
-    <button type="submit">Zaloguj się</button>
 </form>
 </body>
 </html>
