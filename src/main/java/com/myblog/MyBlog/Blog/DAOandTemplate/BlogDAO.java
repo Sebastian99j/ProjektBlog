@@ -1,7 +1,6 @@
 package com.myblog.MyBlog.Blog.DAOandTemplate;
 
 import com.myblog.MyBlog.Blog.SourceProvider.DataSourceProvider;
-import com.myblog.MyBlog.Blog.DAOandTemplate.Users;
 
 import javax.naming.NamingException;
 import javax.sql.DataSource;
@@ -21,8 +20,7 @@ public class BlogDAO {
     }
 
     public void savePost (Inscription inscription){
-        final String sql = String.format("INSERT INTO inscription (id, title, nick_name, inscritpions) VALUES(?,?,?,?)",
-                inscription.getId().toString(), inscription.getTitle(), inscription.getNick_name(), inscription.getInscriptions());
+        final String sql = "INSERT INTO inscription (id, title, nick_name, inscritpions) VALUES(?,?,?,?)";
         try (Connection connection = dataSource.getConnection();
              PreparedStatement statement = connection.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS)){
             statement.setString(1, inscription.getId().toString());
@@ -41,10 +39,8 @@ public class BlogDAO {
     }
 
     public void addUser (Users users){
-        final String sql = String.format("INSERT INTO user (id, nick_name, password, age, city) VALUES (?,?,?,?,?)",
-                users.getId().toString(), users.getNick_name(), users.getPassword(), users.getAge().toString(), users.getCity());
-        final String sql2 = String.format("INSERT INTO user_role (role_name, nick_name) VALUES (?,?)",
-                users.getRole_name(), users.getNick_name());
+        final String sql = "INSERT INTO user (id, nick_name, password, age, city) VALUES (?,?,?,?,?)";
+        final String sql2 = "INSERT INTO user_role (role_name, nick_name) VALUES (?,?)";
         try (Connection connection = dataSource.getConnection();
         PreparedStatement statement = connection.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS)){
             statement.setString(1, (users.getId()).toString());
@@ -196,8 +192,7 @@ public class BlogDAO {
     }
 
     public void saveComment (Comment comment){
-        final String sql = String.format("INSERT INTO comments (id, nick_name, comment, id_inscription) VALUES(?,?,?,?)",
-                comment.getId().toString(), comment.getNick_name(), comment.getComments(), comment.getId_inscription().toString());
+        final String sql = "INSERT INTO comments (id, nick_name, comment, id_inscription) VALUES(?,?,?,?)";
         try (Connection connection = dataSource.getConnection();
              PreparedStatement statement = connection.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS)){
             statement.setString(1, comment.getId().toString());

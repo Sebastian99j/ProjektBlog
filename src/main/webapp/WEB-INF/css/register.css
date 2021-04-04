@@ -16,6 +16,7 @@ body {
     display: inline-block;
     margin: 0 auto;
     width: 200px;
+    margin-top: 50px;
 }
 .xbutton:hover {
     background: #075181;
@@ -24,4 +25,17 @@ body {
     background: -o-linear-gradient(top, #075181, #3cddd1);
     background: -ms-linear-gradient(top, #075181, #3cddd1);
     background: linear-gradient(top, #075181, #3cddd1);
+}
+fieldset {
+    width: 500px;
+    display: inline-block;
+    float: contour;
+}
+.inputx {
+    width: 300px;
+    margin: 5px;
+    height: 40px;
+}
+body {
+    background-color: antiquewhite;
 }

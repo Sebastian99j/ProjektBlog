@@ -1,7 +1,5 @@
 package com.myblog.MyBlog.Blog.DAOandTemplate;
 
-import com.myblog.MyBlog.Blog.DAOandTemplate.BlogDAO;
-import com.myblog.MyBlog.Blog.DAOandTemplate.Users;
 import jakarta.servlet.*;
 import jakarta.servlet.http.*;
 import jakarta.servlet.annotation.*;

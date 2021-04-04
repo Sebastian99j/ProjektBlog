@@ -9,8 +9,6 @@ U
 %src/main/webapp/WEB-INF/js/skrypt2.js,e\e\ee5806824b3b3248971f5a7d018056618126136e
 U
 %src/main/webapp/WEB-INF/js/skrypt1.js,2\3\238e95280d715fa66945e9faec95a26f4f86d25a
-S
-#src/main/webapp/WEB-INF/slider.html,7\7\77fcaea0f9e3046d22d8d8b426e19b38f84edd00
 T
 $src/main/webapp/META-INF/context.xml,c\b\cbfb0d2e9b2b9fbf9d54374577c894a38643c6d0
 S
@@ -39,8 +37,6 @@ n
 Ksrc/main/java/com/myblog/MyBlog/Blog/SourceProvider/DataSourceProvider.java,b\2\b20760c9c25c9e5853e61f57af51cca27b4f6d9c
 z
 Jsrc/main/java/com/myblog/MyBlog/Controllers/Post/DeletePostController.java,a\a\aaae02361c4734e3a86b91e358544c8fbfa252de
-m
-=src/main/java/com/myblog/MyBlog/Controllers/Home/Servlet.java,b\4\b47e4470484c35d7f1494f236cda62cb9eb14d6a
 t
 Dsrc/main/java/com/myblog/MyBlog/Controllers/Home/HomeController.java,c\8\c858e8ad82e7e0c55acd5c956c6191552630a46e
 
@@ -63,8 +59,6 @@ p
 @src/main/java/com/myblog/MyBlog/Blog/DAOandTemplate/BlogDAO.java,b\c\bc8b9a49884d77996aa5e855264f70aac86b54fb
 u
 Esrc/main/java/com/myblog/MyBlog/Controllers/Post/PostsController.java,1\3\13a5bd98c293272238252b6000b6e30ab6fb4b2d
-Q
-!src/main/webapp/WEB-INF/posty.jsp,3\4\34acddaa2dcfd75d1222600327cd65c5eea5acc8
 Z
 *src/main/webapp/WEB-INF/css/style_mail.css,3\8\38a13b95a21edb65f6b6b7c10cbe4374417f6ba6
 X
@@ -83,3 +77,5 @@ Q
 !src/main/webapp/WEB-INF/posts.jsp,7\d\7dcadd03f348147bda674dd77517dd55bae6e7b8
 V
 &src/main/webapp/WEB-INF/css/navbar.css,d\e\ded078dd1c3977d459cac495acba6d832047f462
+W
+'src/main/webapp/WEB-INF/css/addPost.css,3\4\34e8d7f22d50da5e66aefc596d572f9b6728a026
